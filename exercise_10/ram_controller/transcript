@@ -1,0 +1,117 @@
+# //  ModelSim SE-64 6.4c Dec  8 2008 Linux 2.6.18-371.3.1.el5xen
+# //
+# //  Copyright 1991-2008 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+pwd
+# /user/Labs_user/chipw1/students/exercise_10/ram_controller
+cd
+cd nexys3_vhdl_lab/nexys3_pong
+ls
+# ball_movement.vhd
+# bcd_digit.vhd
+# cellram_sim
+# event_trigger.vhd
+# game_engine_package.vhd
+# game_engine.vhd
+# game_states.vhd
+#graphic_buffer_controller.vhd#
+# graphic_buffer_controller.vhd
+# graphic_buffer_controller.vhd~
+# graphic_buffer.vhd
+# graphic_buffer.vhd~
+# graphic_engine_package.vhd
+# graphic_engine_package.vhd~
+# graphic_engine_tb.vhd
+# graphic_engine_tb.vhd~
+# graphic_engine.vhd
+# graphic_engine.vhd~
+# graphic_engine.vhd.bak
+# graphic_output_package.vhd
+# graphic_output_package.vhd~
+# graphic_output_synth.vhd
+# graphic_output_synth.vhd~
+# graphic_output_tb.vhd
+# graphic_output_tb.vhd~
+# graphic_output.vhd
+# graphic_output.vhd~
+# graphic_output.vhd.bak
+# graph_syn
+# input_decoder.vhd
+# modelsim
+# nexys3_pong.zip
+# paddle_movement.vhd
+# pixel_clk_generator.vhd
+# points_display_package.vhd
+# points_display_package.vhd~
+# points_display.vhd
+# points_display.vhd~
+# pong_top_package.vhd
+# pong_top_package.vhd~
+# pong_top_tb.vhd
+# pong_top_tb.vhd~
+# pong_top.vhd
+# pong_top.vhd~
+# position_sample_register.vhd
+# ram_controller_tb.vhd
+# ram_controller_tb.vhd~
+# ram_controller.vhd
+# ram_controller.vhd~
+# random_number_generator.vhd
+# render_buffer.vhd
+# render_buffer.vhd~
+# render_engine_controller.vhd
+# render_engine_controller.vhd~
+# render_engine_package.vhd
+# render_engine_package.vhd~
+# render_engine.vhd
+# render_engine.vhd~
+# renderer.vhd
+# renderer.vhd~
+# reset_circuit.vhd
+# reset_circuit.vhd~
+# rom_hello.vhd
+# rom_hello.vhd~
+# rom_package.vhd
+# rom.vhd
+# syn
+# sync_pulse_generator.vhd
+cd modelsim
+# reading modelsim.ini
+do run_sim.tcl
+# ram_control
+# ..
+# ../cellram_sim
+# ** Warning: (vlib-34) Library already exists at "work".
+# Modifying modelsim.ini
+# -l log.txt -novopt -t 1ps
+# Model Technology ModelSim SE-64 vlog 6.4c Compiler 2008.12 Dec  8 2008
+# -- Compiling module cellram
+# -- Compiling module cellram_pathdelay
+# 
+# Top level modules:
+# 	cellram
+# Model Technology ModelSim SE-64 vcom 6.4c Compiler 2008.12 Dec  8 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity ram_controller
+# -- Compiling architecture rtl of ram_controller
+# Model Technology ModelSim SE-64 vcom 6.4c Compiler 2008.12 Dec  8 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity ram_controller_tb
+# -- Compiling architecture beh of ram_controller_tb
+# -- Compiling configuration ram_controller_tb_beh_cfg
+# -- Loading entity ram_controller_tb
+# -- Loading architecture beh of ram_controller_tb
+# -- Loading package vl_types
+# -- Loading entity cellram
+# -- Loading entity ram_controller
+# vsim -l log.txt -novopt -t 1ps -GMEM_BITS=16 ram_controller_tb

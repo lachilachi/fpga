@@ -1,0 +1,113 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/user/Labs_user/chipw1/students/exercise_10/ram_controller
+vcellram
+VTeE^AUJ<7zKI2FhB=3lW>2
+r1
+31
+I[:B^]Vlg;_?iXm4bBJf?D2
+Z1 w1378454584
+Z2 8./cellram_sim/cellram.v
+Z3 F./cellram_sim/cellram.v
+Z4 F./cellram_sim/cellram_parameters.vh
+L0 91
+Z5 OL;L;6.4c;39
+Z6 o+define+sg701 +incdir+./cellram_sim -L mtiAvm -L mtiOvm -L mtiUPF
+!s85 0
+!s100 ^<FRRWbJSJL`;W1z<od6e0
+vcellram_pathdelay
+VnAFWS]eT6[LMNJU>OP1GS1
+r1
+31
+If]K7c`z?_N3VLb3kzRzT<2
+R1
+R2
+R3
+R4
+L0 1314
+R5
+R6
+!s85 0
+!s100 :b=UC>@lAihePjKn=@7l31
+Eram_controller
+Z7 w1381409347
+Z8 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z10 8./ram_controller.vhd
+Z11 F./ram_controller.vhd
+l0
+L14
+V^;X>UiCAoLYdzK^fFYXl12
+Z12 OL;C;6.4c;39
+32
+Z13 o-work work -check_synthesis
+Z14 tExplicit 1
+!s100 AR6]:[c4BEQAmT9an1^Ae0
+Artl
+R8
+R9
+Z15 DEx4 work 14 ram_controller 0 22 ^;X>UiCAoLYdzK^fFYXl12
+32
+Z16 Mx2 4 ieee 14 std_logic_1164
+Z17 Mx1 4 ieee 11 numeric_std
+l92
+L67
+VHbSLjoQ;EWjcI4Z44Fe9U2
+R12
+R13
+R14
+!s100 1IRLjI@I@T4nJlSI]JFBV1
+Eram_controller_tb
+Z18 w1386954423
+R8
+R9
+Z19 8./ram_controller_tb.vhd
+Z20 F./ram_controller_tb.vhd
+l0
+L28
+V1>kfbdb>93W^EL:LJI=gj3
+R12
+32
+Z21 o-work work
+R14
+!s100 CXG[QaLHL:^ZNJ7TB8RJo3
+Abeh
+R8
+R9
+Z22 DEx4 work 17 ram_controller_tb 0 22 1>kfbdb>93W^EL:LJI=gj3
+32
+R16
+R17
+l108
+L34
+VWMRbkD@8J^KP6beI1l5Q^2
+R12
+R21
+R14
+!s100 >3HO@=4?:AJ:>Toi7W:_c2
+Cram_controller_tb_beh_cfg
+abeh
+eram_controller_tb
+DPx7 verilog 8 vl_types 0 22 EL`7Km5528[`SUe@0N=SW0
+R15
+DEx4 work 7 cellram 0 22 TeE^AUJ<7zKI2FhB=3lW>2
+DAx4 work 17 ram_controller_tb 3 beh 22 WMRbkD@8J^KP6beI1l5Q^2
+R8
+R9
+R22
+R18
+R19
+R20
+l0
+L223
+V5HQcG13oE:NQjKc8VcP[h2
+R12
+32
+Z23 Mx3 4 ieee 14 std_logic_1164
+Mx2 4 ieee 11 numeric_std
+Mx1 7 verilog 8 vl_types
+R21
+R14
+!s100 OGTcaDhb_K6mhUa27MaQm0

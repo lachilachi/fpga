@@ -1,0 +1,70 @@
+1100 --both registers request data
+1100
+1110
+0100
+0100 --reg 0 will be selected in the next cycle 
+0100
+0110
+0000
+0000
+0000
+0000
+0000
+1000 --register switch on next rising clock edge
+1010
+0000
+0000
+0000
+0000
+0000
+0000
+0100 --register switch on next rising clock edge
+0110
+0000
+0000
+0000
+0000
+0000
+0000
+1000 --register switch on next rising clock edge
+1010
+0000
+0000
+0000
+0000
+0000
+0000
+0100 --register switch on next rising clock edge
+0100 --stay in REG_EMPTY state
+0100
+0110
+0000
+0000
+0001 --renderer has completed a new frame
+0001
+1001 --register switch on next rising clock edge, but no page switch
+1011
+0001
+0001
+0001
+0001
+0001
+0001
+0101 --register switch on next rising clock edge, also page switch 
+0111
+0001
+0001
+0001
+0001
+0001
+0001
+1001 --register switch on next rising clock edge, but no page switch
+1011
+0001
+0001
+0001
+0000
+0000
+0000
+0100 --register switch on next rising clock edge
+0000

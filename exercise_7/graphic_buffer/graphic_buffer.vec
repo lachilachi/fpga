@@ -1,0 +1,61 @@
+001 --load
+000 --nothing
+100 --select but no shift
+110 --shift 1
+110 --shift 2
+110 --shift 3
+110 --shift 4
+110 --shift 5
+110 --shift 6
+110 --shift 7
+110 --shift 8
+110 --shift 9
+110 --shift 10
+110 --shift 11
+110 --shift 12
+110 --shift 13
+110 --shift 14
+110 --shift 15
+110 --shift 16
+110 --shift 17
+110 --shift 18
+110 --shift 19
+110 --shift 20
+110 --shift 21
+110 --shift 22
+110 --shift 23
+110 --shift 24
+110 --shift 25
+110 --shift 26
+110 --shift 27
+110 --shift 28
+110 --shift 29
+110 --shift 30
+110 --shift 31
+110 --last shift
+110 --select and shift but buffer is empty
+111 --reload with shift enabled
+010 --shift with select inactive
+011 --reload with shift_enable active
+010 --shift with select inactive
+010 --shift with select inactive
+010 --shift with select inactive
+010 --shift with select inactive
+110 --shift 1
+110 --shift 2
+110 --shift 3
+100 --no shift
+101 --no shift with reload signal
+100 --no shift
+110 --shift 4
+110 --shift 5
+110 --shift 6
+110 --shift 7
+110 --last shift
+010 --no shift
+010 --no shift
+011 --reload
+010 --no select
+010 --no select
+110 --shift 1
+110 --shift 2

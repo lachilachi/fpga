@@ -1,0 +1,66 @@
+0
+0
+0
+0
+1   --start of 1st dataword
+1
+1
+1
+1
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1   --end of 1st dataword
+0
+0
+0
+0
+0
+1   --start of 2nd dataword
+0
+0
+0
+0
+U   --during these bits the 
+U   --enable signal is inactive
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0   --end of 2nd dataword
+0
