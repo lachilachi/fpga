@@ -6,7 +6,7 @@ psw="pwd"
 path_to_local_bitfile=./graphic_output_synth/graphic_output_synth/graphic_output_synth.bit
 
 # Copy the bitfile to the remote location
-sshpass -p $psw scp ./graphic_output_synth/graphic_output_synth/graphic_output_synth.bit $user@stu-workstation8:/user/Labs_user/hwlab1
+sshpass -p $psw scp ./graphic_output_synth/graphic_output_synth/graphic_output_synth.bit $user@stu-workstation8:/user/Labs_user/$user
 
 # Run the script on the remote workstation
 
