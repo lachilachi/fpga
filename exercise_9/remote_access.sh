@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # Configuration
 user=hwlabX
