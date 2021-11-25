@@ -18,13 +18,79 @@ end mealy_fsm;
 
 
 architecture rtl of mealy_fsm is
+type fsm_states is (STATE_ONE, STATE_TWO, STATE_THREE);
+signal state_fsm : fsm_states := STATE_ONE;
+   
+	begin
 
+state_transitions : process (clk)
+	begin
+		if rising_edge(clk) then
+       
+			if reset = '1' then
+        		state_fsm <= STATE_ONE;
+        	else
+        		case state_fsm is
+        	    	when STATE_ONE =>
+        	        
+        	            	state_fsm <= STATE_TWO;
+        	            
+        	        when STATE_TWO =>
+        	            if i_a = '1' and i_b = '1' then
+        	                state_fsm <= STATE_THREE;
+        	            elsif i_a = '0' and i_b = '1' then
+        	                state_fsm <= STATE_THREE;
+						else 
+        	                state_fsm <= STATE_TWO;
+        	            end if;
+					when STATE_THREE =>
+        	            if i_a = '1' and i_b = '0' then
+        	                state_fsm <= STATE_ONE;
+						elsif i_b = '1' then
+							state_fsm <= STATE_TWO;
+						else state_fsm <= STATE_THREE;
+        	            end if;
+        	     end case;
+        	  end if;
+		end if;
+       
+end process state_transitions;
 
+output: process(clk)
+	begin
+		if rising_edge(clk) then    
+			if reset = '1' then
+        		o_c <= '0'; 
+				o_d <= '0';
+        	elsif state_fsm = STATE_ONE then
+				o_c <= '0'; 
+				o_d <= '1';
+        	            
+        	elsif state_fsm = STATE_TWO then
+				if i_a = '1' and i_b = '1' then 
+					o_c <= '0'; 
+					o_d <= '1';
+				elsif i_a = '0' and i_b = '1' then
+					o_c <= '0'; 
+					o_d <= '0';
+				else 
+					o_c <= '1'; 
+					o_d <= '0';
+				end if;
+			elsif state_fsm = STATE_THREE then
+				if i_b = '1' then 
+					o_c <= '0'; 
+					o_d <= '1';
+				elsif i_a = '1' and i_b = '0' then
+					o_c <= '1'; 
+					o_d <= '1';
+				else 
+					o_c <= '1'; 
+					o_d <= '1';
+				end if;
+			end if;
+		end if;
 
+end process output;
 
-
-
-
-
-  
 end rtl;
