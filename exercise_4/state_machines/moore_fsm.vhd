@@ -59,10 +59,8 @@ end process state_transitions;
 output: process(clk)
 	begin
 		if rising_edge(clk) then
-			if reset = '1' then
-        		o_c <= '0'; 
-				o_d <= '0';
-			elsif state_fsm = STATE_ONE then
+			
+			if state_fsm = STATE_ONE then
 				o_c <= '0';
 				o_d <= '1';
 			elsif state_fsm = STATE_TWO then
