@@ -29,10 +29,10 @@ entity sync_pulse_generator is
    --G_V_SYNC_LENGTH    : vertical sync pulse length in pixels
    --G_V_SYNC_ACTIVE    : vertical sync pulse polarity (1 = pos, 0 = neg)
    generic (G_H_PIXEL_NUMBER : integer := 800;
-            G_H_RESOLUTION : integer := 640;
-            G_H_FRONT_PORCH : integer := 8;
-            G_H_BACK_PORCH : integer := 48;
-            G_H_SYNC_LENGTH : integer := 96;
+            G_H_RESOLUTION : integer := 640; --4
+            G_H_FRONT_PORCH : integer := 8;  --1
+            G_H_BACK_PORCH : integer := 48;  --3
+            G_H_SYNC_LENGTH : integer := 96; --2
             G_H_SYNC_ACTIVE : std_logic := '0';
              
             G_V_PIXEL_NUMBER : integer := 525;
@@ -53,33 +53,31 @@ end sync_pulse_generator;
 
 
 architecture rtl of sync_pulse_generator is
-
 signal i : integer := 0;
 signal j : integer := 0;
 signal act_h : std_logic := '0';
 signal act_v : std_logic := '0';
-
-
-
 begin
 o_in_active_region <= act_h and act_v;
-			 
-process (clk)
-begin
-	if (clk'event and clk = '1') then
-		if (reset = '1') then   
+
+column: process(clk)
+
+begin	
+	if clk'event and clk='1' then
+		if reset = '1' then
 			i <= 0;
 			j <= 0;
 			act_h <= '0';
 			act_v <= '0';
-			o_h_sync <= not(G_H_SYNC_ACTIVE);
-			o_v_sync <= not(G_V_SYNC_ACTIVE);    
-		else
-			
+			o_h_sync <= not G_H_SYNC_ACTIVE;
+			o_v_sync <= not G_V_SYNC_ACTIVE;
+			o_in_active_region <= '0';
+		
+		else	
 			if (i = G_H_PIXEL_NUMBER - 1) then  
-				i <= 0;                               
+				i <= 0;                               -- to the left
 				if (j = G_V_PIXEL_NUMBER - 1) then  
-					j <= 0;                            
+					j <= 0;                             --to the top
 				else
 					j <= j + 1;
 				end if;
@@ -96,7 +94,7 @@ begin
 			end if;
 			
 			--column
-			if (i = G_H_PIXEL_NUMBER - 1) then  --right border
+			if (i = G_H_PIXEL_NUMBER - 1) then  
 				if (j = G_V_FRONT_PORCH - 1) then
 					o_v_sync <= G_V_SYNC_ACTIVE;
 				elsif (j = G_V_FRONT_PORCH + G_V_SYNC_LENGTH - 1) then
@@ -117,11 +115,10 @@ begin
 				act_v <= '0';
 			end if;
 			
-			
 
 		end if;
 	end if;
 end process;
-
+		
 end rtl;
 

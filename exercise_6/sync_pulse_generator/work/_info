@@ -1,0 +1,151 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/zz/Desktop/vhdl_student/exercise_5/multiplier_4x4
+T_opt
+!s110 1639594192
+VSYoA>@XhcL8A^R2LAJoFo1
+04 29 3 work sync_pulse_generator_small_tb beh 1
+=1-489ebdf63ae9-61ba38cf-1ac-4d5c
+Z1 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.4;61
+R0
+T_opt1
+!s110 1639599813
+Vc;dV`R6`D>f<>z2geN=Hc1
+04 28 3 work sync_pulse_generator_full_tb beh 1
+=1-489ebdf63ae9-61ba4ec4-35d-174c
+R1
+n@_opt1
+R2
+R0
+Esync_pulse_generator
+Z3 w1642021919
+Z4 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 dD:/Users/zz/Desktop/vhdl_student/exercise_6/sync_pulse_generator
+Z8 8sync_pulse_generator.vhd
+Z9 Fsync_pulse_generator.vhd
+l0
+L16
+V_IJo6HZfNMCckWTjgn5Ue2
+!s100 DGfbzSfa_P2<[l>]I^0?S1
+Z10 OL;C;10.4;61
+32
+Z11 !s110 1642021951
+!i10b 1
+Z12 !s108 1642021951.116000
+Z13 !s90 -reportprogress|300|sync_pulse_generator.vhd|
+Z14 !s107 sync_pulse_generator.vhd|
+!i113 0
+Z15 tExplicit 1
+Artl
+R4
+R5
+R6
+DEx4 work 20 sync_pulse_generator 0 22 _IJo6HZfNMCckWTjgn5Ue2
+32
+R11
+l64
+L55
+VQYHh35VJn:ok=@=^9l[?b2
+!s100 BBmJN@;X0maTWAfImf?JA0
+R10
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+Esync_pulse_generator_full_tb
+Z16 w1634590906
+Z17 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R4
+R5
+R6
+R7
+Z18 8D:/Users/zz/Desktop/vhdl_student/exercise_6/sync_pulse_generator/sync_pulse_generator_full_tb.vhd
+Z19 FD:/Users/zz/Desktop/vhdl_student/exercise_6/sync_pulse_generator/sync_pulse_generator_full_tb.vhd
+l0
+L13
+VmTV]za3oRVO;HJdWZL=N43
+!s100 jAD8l48Ykd9JRib>_3Y110
+R10
+32
+Z20 !s110 1642008725
+!i10b 1
+Z21 !s108 1642008725.779000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/Users/zz/Desktop/vhdl_student/exercise_6/sync_pulse_generator/sync_pulse_generator_full_tb.vhd|
+Z23 !s107 D:/Users/zz/Desktop/vhdl_student/exercise_6/sync_pulse_generator/sync_pulse_generator_full_tb.vhd|
+!i113 0
+Z24 o-work work -2002 -explicit
+R15
+Abeh
+R17
+R4
+R5
+R6
+DEx4 work 28 sync_pulse_generator_full_tb 0 22 mTV]za3oRVO;HJdWZL=N43
+l61
+L18
+V3FiWika@=LTZ[8=6f^U=n3
+!s100 kz;81A:FAY`3?Jg3NTA5o2
+R10
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 0
+R24
+R15
+Esync_pulse_generator_small_tb
+R16
+R17
+R4
+R5
+R6
+R7
+Z25 8sync_pulse_generator_small_tb.vhd
+Z26 Fsync_pulse_generator_small_tb.vhd
+l0
+L13
+VjoHjbYZ@E^9YRRN7]@SAB3
+!s100 j@gZ9[97_EKz3LWO[S8Xc3
+R10
+32
+R11
+!i10b 1
+Z27 !s108 1642021951.215000
+Z28 !s90 -reportprogress|300|sync_pulse_generator_small_tb.vhd|
+Z29 !s107 sync_pulse_generator_small_tb.vhd|
+!i113 0
+R15
+Abeh
+R17
+R4
+R5
+R6
+DEx4 work 29 sync_pulse_generator_small_tb 0 22 joHjbYZ@E^9YRRN7]@SAB3
+32
+R11
+l61
+L18
+VdlJW9bZ[@Y;D4H@K3>=nC2
+!s100 bk8i7bCzFT<KbI4;_]R482
+R10
+!i10b 1
+R27
+R28
+R29
+!i113 0
+R15

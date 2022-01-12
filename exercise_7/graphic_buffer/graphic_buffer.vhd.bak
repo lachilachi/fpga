@@ -23,53 +23,45 @@ entity graphic_buffer is
   port (clk   : in std_logic := '0';
         reset : in std_logic := '0';
 
-        i_select       : in std_logic                          := '0';
-        i_shift_enable : in std_logic                          := '0';
-        i_load         : in std_logic                          := '0';
-        i_rgb_data     : in std_logic_vector (32*8-1 downto 0) := (others => '0');
+        i_select       : in std_logic                          := '0';      --选择活动的buffer,置1使能
+        i_shift_enable : in std_logic                          := '0';	    --置1转换使能
+        i_load         : in std_logic                          := '0';		--载入新数据
+        i_rgb_data     : in std_logic_vector (32*8-1 downto 0) := (others => '0');--输入的数据
 
-        o_data_req : out std_logic                     := '1';
-        o_rgb      : out std_logic_vector (7 downto 0) := (others => '0'));
+        o_data_req : out std_logic                     := '1';   --当256位输出完成请求新数据
+        o_rgb      : out std_logic_vector (7 downto 0) := (others => '0'));--输出的串行数据
 end graphic_buffer;
 
 
 
 architecture rtl of graphic_buffer is
-signal i : integer := 0;
-signal reg : std_logic_vector (32*8-1 downto 0) := (others => '0');
+variable temp:std_logic_vector (32*8-1 downto 0);
+variable count:integer ;
 
 begin
-
+temp := i_rgb_data;
+count := 0;
   process (clk)
-  
+
   begin
     if rising_edge(clk) then
-		if (reset = '1') then
-			o_data_req <= '1';
-			i <= 0;
-		else
-			if (i_select = '1' and i_shift_enable = '1' and i /= 31) then
-			  reg <= "00000000" & reg(32*8-1 downto 8);
-			  i <= i + 1;
-			  
-			  
-			  
-					if (i = 32 - 2) then
-						o_data_req <= '1';
-					end if;	
-			end if;
+		
+		if reset = '1' then 
 			
+			o_data_req = '0';
+			o_rgb = '0';
 			
-			if (i_load = '1' and i_select = '0') then
-				
-				reg <= i_rgb_data;
-				i <= 0;
-				o_data_req <= '0';
-			end if;
-
-		end if;
+		elsif (i_load = '1') then
+			
+		elsif (i_select = '1' and i_shift_enable = '1') then
+			
+			o_rgb <= temp(7 downto 0);
+			temp <=	'00000000' & temp(32*8-1 downto 8);
+			count := count+1;
+			if (count = 32) then
+				o_data_req = '1';
+			
     end if;
   end process;
-  o_rgb <= reg (7 downto 0);
   
 end rtl;
