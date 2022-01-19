@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/TU Braunschweig/2021-2022ws/FPGA Praktikum/EX6
+Egraphic_buffer_controller
+Z0 w1642622038
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/TU Braunschweig/2021-2022ws/Aufgabe/fpga/exercise_8/graphic_buffer_controller
+Z5 8graphic_buffer_controller.vhd
+Z6 Fgraphic_buffer_controller.vhd
+l0
+L15
+V:0bGYglKNCcUcNU;7hidE3
+!s100 S]WeCTIdGBWYG0ZZGc>B83
+Z7 OL;C;10.4;61
+32
+Z8 !s110 1642622178
+!i10b 1
+Z9 !s108 1642622178.447000
+Z10 !s90 -reportprogress|300|graphic_buffer_controller.vhd|
+Z11 !s107 graphic_buffer_controller.vhd|
+!i113 0
+Z12 tExplicit 1
+Artl
+R1
+R2
+R3
+DEx4 work 25 graphic_buffer_controller 0 22 :0bGYglKNCcUcNU;7hidE3
+32
+R8
+l65
+L56
+V3^ha:CDfSBn]6>6A8YfGG1
+!s100 jP?j0VdlGU`SR0m:nHMR61
+R7
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+Egraphic_buffer_controller_tb
+Z13 w1642619698
+Z14 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R1
+R2
+R3
+R4
+Z15 8graphic_buffer_controller_tb.vhd
+Z16 Fgraphic_buffer_controller_tb.vhd
+l0
+L7
+V[@^7GDdX>=oFgS<9F7VKK0
+!s100 FPMWNTgiXce?RX8e`IV`Y3
+R7
+32
+R8
+!i10b 1
+Z17 !s108 1642622178.629000
+Z18 !s90 -reportprogress|300|graphic_buffer_controller_tb.vhd|
+Z19 !s107 graphic_buffer_controller_tb.vhd|
+!i113 0
+R12
+Abeh
+R14
+R1
+R2
+R3
+DEx4 work 28 graphic_buffer_controller_tb 0 22 [@^7GDdX>=oFgS<9F7VKK0
+32
+R8
+l51
+L12
+VV8Gg?0i<WXJ13THD><J<X0
+!s100 SI1F28IQ]`cW=;zNlMIY`1
+R7
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R12

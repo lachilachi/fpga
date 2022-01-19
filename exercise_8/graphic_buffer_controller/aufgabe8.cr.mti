@@ -1,0 +1,22 @@
+{D:/TU Braunschweig/2021-2022ws/Aufgabe/fpga/exercise_8/graphic_buffer_controller/graphic_buffer_controller.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\TU Braunschweig\2021-2022ws\Aufgabe\fpga\exercise_8\graphic_buffer_controller\graphic_buffer_controller.vhd}
+Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity graphic_buffer_controller
+-- Compiling architecture rtl of graphic_buffer_controller
+
+} {} {}} {D:/TU Braunschweig/2021-2022ws/Aufgabe/fpga/exercise_8/graphic_buffer_controller/graphic_buffer_controller_tb.vhd} {2 {vcom -work work -2002 -explicit -vopt -stats=none {D:/TU Braunschweig/2021-2022ws/Aufgabe/fpga/exercise_8/graphic_buffer_controller/graphic_buffer_controller_tb.vhd}
+Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity graphic_buffer_controller_tb
+-- Compiling architecture beh of graphic_buffer_controller_tb
+** Warning: D:/TU Braunschweig/2021-2022ws/Aufgabe/fpga/exercise_8/graphic_buffer_controller/graphic_buffer_controller_tb.vhd(87): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+
+
+} {} {}}
