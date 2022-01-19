@@ -63,8 +63,9 @@ signal address : integer := 0;
 
 
 begin
-
+ 
     state_transitions : process (clk)
+	--Umwandlung von meanlystate
 	begin
 		if rising_edge(clk) then
        
@@ -91,6 +92,8 @@ begin
 	end process state_transitions;
 	
 	output: process(clk)
+	-- output von unterschiedlichen Staten
+	
 	begin 
 	    if rising_edge(clk) then
 		
@@ -103,25 +106,25 @@ begin
 			   o_page_switched <= '0';
             else
 			    if state_fsm = REG_EMPTY then
-			        o_read_req <= '1';
-			        if i_data_req_reg_0 = '1' then
+			        o_read_req <= '1';  --changed buffer
+			        if i_data_req_reg_0 = '1' then    --aktiv buffer ist 0
 			            o_reg_select <= '1';
 			        else
 				        o_reg_select <= '0';
 				    end if;
 					
 			    elsif state_fsm = LOAD_REG then
-			        o_load_reg <= '1';
+			        o_load_reg <= '1';  
 					 
 				elsif state_fsm = WAITING then
 				    o_load_reg <= '0';
 					o_read_req <= '0';
 					
-				    if address = (G_H_RESOLUTION*G_V_RESOLUTION/2-16) then
+				    if address = (G_H_RESOLUTION*G_V_RESOLUTION/2-16) then    --ein Bild ist ferig gelesen
 					    address <= 0;
 					    if i_new_frame_ready ='1' then
 					        flag <= not(flag);
-							o_page_switched <= '1';
+							o_page_switched <= '1';       --ein neue Frame ist vorbereitet, umwandeln wir um andere Seit
 						else
 						    o_page_switched <= '0';
                             flag <= flag;
