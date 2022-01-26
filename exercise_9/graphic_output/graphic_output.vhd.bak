@@ -41,7 +41,7 @@ architecture rtl of graphic_output is
 
 
 --定义中间变量
-signal reg_select: std_logic := '0';
+variable reg_select: std_logic := '0';
 signal no_reg_select: std_logic := '1';
 signal load_reg: std_logic := '0';
 signal data_req_reg_0: std_logic := '0';
@@ -49,7 +49,7 @@ signal data_req_reg_1: std_logic := '0';
 signal rgb: std_logic_vector(7 downto 0);
 signal rgb0: std_logic_vector(7 downto 0);
 signal rgb1: std_logic_vector(7 downto 0);
-signal active_region: std_logic := '0';
+variable active_region: std_logic := '0';
 
 
 begin
