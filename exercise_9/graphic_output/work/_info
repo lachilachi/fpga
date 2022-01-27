@@ -1,99 +1,204 @@
 m255
-K4
-z2
+K3
 13
-!s112 1.1
-!i10d 8192
-!i10e 25
-!i10f 100
 cModel Technology
-dH:/Modelsim SE-64 10.4/Mentor Graphics ModelSim SE 10.4/examples
+d/user/Labs_user/chipw2/vhdl_student/exercise_8/graphic_buffer_controller
+Egraphic_buffer
+Z0 w1642079100
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 d/user/Labs_user/chipw2/vhdl_student/exercise_9/graphic_output
+Z5 8../../exercise_7/graphic_buffer/graphic_buffer.vhd
+Z6 F../../exercise_7/graphic_buffer/graphic_buffer.vhd
+l0
+L10
+VfVBl8oE:I;Ig?`:D4m`G`2
+Z7 OL;C;10.1b;51
+33
+Z8 !s108 1643290578.627625
+Z9 !s90 -reportprogress|300|../../exercise_7/graphic_buffer/graphic_buffer.vhd|
+Z10 !s107 ../../exercise_7/graphic_buffer/graphic_buffer.vhd|
+Z11 tExplicit 1
+!s100 Smel>LCj3hUVcGFnhf?R41
+!i10b 1
+Artl
+R1
+R2
+R3
+DEx4 work 14 graphic_buffer 0 22 fVBl8oE:I;Ig?`:D4m`G`2
+33
+l41
+L37
+VT650aFXmfB=je[N^CE5:J1
+R7
+R8
+R9
+R10
+R11
+!i10b 1
+!s100 _kL>`R9@9cz64de@dNU8<3
+Egraphic_buffer_controller
+Z12 w1642689419
+R1
+R2
+R3
+R4
+Z13 8../../exercise_8/graphic_buffer_controller/graphic_buffer_controller.vhd
+Z14 F../../exercise_8/graphic_buffer_controller/graphic_buffer_controller.vhd
+l0
+L15
+VPX4b0iSEgC><=o0MQ;CV<0
+R7
+33
+Z15 !s108 1643290578.684724
+Z16 !s90 -reportprogress|300|../../exercise_8/graphic_buffer_controller/graphic_buffer_controller.vhd|
+Z17 !s107 ../../exercise_8/graphic_buffer_controller/graphic_buffer_controller.vhd|
+R11
+!s100 2L0RCaP;K9QI0[FhSEQbW2
+!i10b 1
+Artl
+R1
+R2
+R3
+DEx4 work 25 graphic_buffer_controller 0 22 PX4b0iSEgC><=o0MQ;CV<0
+33
+l65
+L56
+V6zHKXN_BdE`?_0;OQ?ITo1
+R7
+R15
+R16
+R17
+R11
+!i10b 1
+!s100 U<zC7AD1mI1JGLTATg=XQ1
 Egraphic_output
-w1643234288
-Z0 DPx4 work 22 graphic_output_package 0 22 QnIB;3igU8YN638e6K2Z<1
-Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z4 dD:/TU Braunschweig/2021-2022ws/Aufgabe/fpga/exercise_9/graphic_output
-8D:/TU Braunschweig/2021-2022ws/Aufgabe/fpga/exercise_9/graphic_output/graphic_output.vhd
-FD:/TU Braunschweig/2021-2022ws/Aufgabe/fpga/exercise_9/graphic_output/graphic_output.vhd
+Z18 w1643290236
+Z19 DPx4 work 22 graphic_output_package 0 22 4Y=dciI^d;Eg7oEVb79T40
+R1
+R2
+R3
+R4
+Z20 8graphic_output.vhd
+Z21 Fgraphic_output.vhd
 l0
 L5
-V5U2>_KzJ>GFIeYj]CnTT?0
-!s100 G^SNhz2`Sz1FoM@=oMZ=_0
-Z5 OL;C;10.4;61
-32
-!s110 1643234292
+V`;PR3ZnX<he7@jK210mZj3
+R7
+33
+Z22 !s108 1643290578.784721
+Z23 !s90 -reportprogress|300|graphic_output.vhd|
+Z24 !s107 graphic_output.vhd|
+R11
+!s100 6X8W_<R?EBST^[Gh?<HkO2
 !i10b 1
-!s108 1643234292.836000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/TU Braunschweig/2021-2022ws/Aufgabe/fpga/exercise_9/graphic_output/graphic_output.vhd|
-!s107 D:/TU Braunschweig/2021-2022ws/Aufgabe/fpga/exercise_9/graphic_output/graphic_output.vhd|
-!i113 0
-Z6 o-work work -2002 -explicit
-Z7 tExplicit 1
+Artl
+R19
+R1
+R2
+R3
+DEx4 work 14 graphic_output 0 22 `;PR3ZnX<he7@jK210mZj3
+33
+l55
+L41
+V>=DJ^oej1foLT;f_4K0J[1
+R7
+R22
+R23
+R24
+R11
+!i10b 1
+!s100 6OjDofcI]hG9XAE3d;6>J2
 Pgraphic_output_package
 R2
 R3
-Z8 w1642619698
+33
+w1643290144
 R4
-8D:/TU Braunschweig/2021-2022ws/Aufgabe/fpga/exercise_9/graphic_output/graphic_output_package.vhd
-FD:/TU Braunschweig/2021-2022ws/Aufgabe/fpga/exercise_9/graphic_output/graphic_output_package.vhd
+8graphic_output_package.vhd
+Fgraphic_output_package.vhd
 l0
 L4
-VQnIB;3igU8YN638e6K2Z<1
-!s100 3lW01kYzooOn;Jiz_3M3d2
-R5
-32
-!s110 1643232902
-!i10b 1
-!s108 1643232902.267000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/TU Braunschweig/2021-2022ws/Aufgabe/fpga/exercise_9/graphic_output/graphic_output_package.vhd|
-!s107 D:/TU Braunschweig/2021-2022ws/Aufgabe/fpga/exercise_9/graphic_output/graphic_output_package.vhd|
-!i113 0
-R6
+V4Y=dciI^d;Eg7oEVb79T40
 R7
+R11
+!i10b 1
+!s100 @IDR<=FK9zSf1En5HejB01
+!s108 1643290578.739674
+!s90 -reportprogress|300|graphic_output_package.vhd|
+!s107 graphic_output_package.vhd|
 Egraphic_output_tb
-R8
-R0
-Z9 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z25 w1634626907
+R19
+Z26 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
 R1
 R2
 R3
 R4
-Z10 8D:\TU Braunschweig\2021-2022ws\Aufgabe\fpga\exercise_9\graphic_output\graphic_output_tb.vhd
-Z11 FD:\TU Braunschweig\2021-2022ws\Aufgabe\fpga\exercise_9\graphic_output\graphic_output_tb.vhd
+Z27 8graphic_output_tb.vhd
+Z28 Fgraphic_output_tb.vhd
 l0
 L8
-Vi1eco@XoRWMnW0DYK4SIi1
-!s100 g11Rc2RA`YBiegGf?PW3c3
-R5
-32
-Z12 !s110 1643232901
-!i10b 1
-Z13 !s108 1643232901.923000
-Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:\TU Braunschweig\2021-2022ws\Aufgabe\fpga\exercise_9\graphic_output\graphic_output_tb.vhd|
-Z15 !s107 D:\TU Braunschweig\2021-2022ws\Aufgabe\fpga\exercise_9\graphic_output\graphic_output_tb.vhd|
-!i113 0
-R6
+V5hiJlG>IKlL@Wd<FE<j0S2
 R7
+33
+Z29 !s108 1643290578.845713
+Z30 !s90 -reportprogress|300|graphic_output_tb.vhd|
+Z31 !s107 graphic_output_tb.vhd|
+R11
+!s100 mz`BeDWL@hPakO;=cF]W33
+!i10b 1
 Abeh
-R0
-R9
+R19
+R26
 R1
 R2
 R3
-DEx4 work 17 graphic_output_tb 0 22 i1eco@XoRWMnW0DYK4SIi1
+DEx4 work 17 graphic_output_tb 0 22 5hiJlG>IKlL@Wd<FE<j0S2
+33
 l68
 L13
-VSgB5@WcHm@Q8Zeh4hibBJ0
-!s100 jL?6VKeBg6FA[ChMl`L4b2
-R5
-32
-R12
-!i10b 1
-R13
-R14
-R15
-!i113 0
-R6
+VhTOZ75iN99Q>4lOR0z?652
 R7
+R29
+R30
+R31
+R11
+!i10b 1
+!s100 RaiI9Kn3zX[M34g?fR2bD0
+Esync_pulse_generator
+Z32 w1642077411
+R1
+R2
+R3
+R4
+Z33 8../../exercise_6/sync_pulse_generator/sync_pulse_generator.vhd
+Z34 F../../exercise_6/sync_pulse_generator/sync_pulse_generator.vhd
+l0
+L17
+V5FMcU81j5UGgaZB0333?:2
+R7
+33
+Z35 !s108 1643290578.560292
+Z36 !s90 -reportprogress|300|../../exercise_6/sync_pulse_generator/sync_pulse_generator.vhd|
+Z37 !s107 ../../exercise_6/sync_pulse_generator/sync_pulse_generator.vhd|
+R11
+!s100 azEX;1TS;d>VVTLCl12N70
+!i10b 1
+Artl
+R1
+R2
+R3
+DEx4 work 20 sync_pulse_generator 0 22 5FMcU81j5UGgaZB0333?:2
+33
+!i10b 1
+l61
+L56
+V7j5YQ4342FE8ADE[6Q88Z0
+R7
+R35
+R36
+R37
+R11
+!s100 J99jB?=^6RbF?m63AbNM43

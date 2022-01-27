@@ -121,9 +121,7 @@ begin
   
   file vector_file : text is in "input_data.vec";
    variable read_line : line;
-   variable stimulus_vector : std_logic_vector (1 to 3);
-   variable in_data_vec : std_logic_vector(32*8-1 downto 0);
-   variable byte_cnt    : unsigned(7 downto 0) := (others => '0');
+   variable stimulus_vector : std_logic_vector (1 to 4);
    
   begin
 

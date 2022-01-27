@@ -4,6 +4,20 @@ use IEEE.STD_LOGIC_1164.all;
 package graphic_output_package is
 
 component graphic_buffer is
+  generic (G_H_PIXEL_NUMBER : integer := 800;
+           G_H_RESOLUTION   : integer := 640;
+           G_H_FRONT_PORCH  : integer := 8;
+           G_H_BACK_PORCH   : integer := 48;
+           G_H_SYNC_LENGTH  : integer := 96;
+           G_H_SYNC_ACTIVE  : std_logic := '0';
+
+           G_V_PIXEL_NUMBER : integer := 525;
+           G_V_RESOLUTION   : integer := 480;
+           G_V_FRONT_PORCH  : integer := 2;
+           G_V_BACK_PORCH   : integer := 33;
+           G_V_SYNC_LENGTH  : integer := 2;
+           G_V_SYNC_ACTIVE  : std_logic := '0');
+           
    port (clk   : in std_logic := '0';
         reset : in std_logic := '0';
 
@@ -17,9 +31,19 @@ component graphic_buffer is
 end component;
 
 component graphic_buffer_controller is
-  generic (
+  generic (G_H_PIXEL_NUMBER : integer := 800;
            G_H_RESOLUTION   : integer := 640;
-           G_V_RESOLUTION   : integer := 480);
+           G_H_FRONT_PORCH  : integer := 8;
+           G_H_BACK_PORCH   : integer := 48;
+           G_H_SYNC_LENGTH  : integer := 96;
+           G_H_SYNC_ACTIVE  : std_logic := '0';
+
+           G_V_PIXEL_NUMBER : integer := 525;
+           G_V_RESOLUTION   : integer := 480;
+           G_V_FRONT_PORCH  : integer := 2;
+           G_V_BACK_PORCH   : integer := 33;
+           G_V_SYNC_LENGTH  : integer := 2;
+           G_V_SYNC_ACTIVE  : std_logic := '0');
            
    port (clk   : in std_logic := '0';
         reset : in std_logic := '0';
