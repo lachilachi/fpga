@@ -30,9 +30,38 @@ end event_trigger;
 
 architecture rtl of event_trigger is
 
-
+      signal cnt_paddle: integer range 0 to G_PADDLE_EVENT_INTERVAL - 1;
+      signal cnt_ball: integer range 0 to G_BALL_EVENT_INTERVAL - 1;
 
 begin
+
+      process (clk)
+
+	begin
+		if rising_edge(clk) then
+			if reset = '1' then
+				cnt_paddle <= 0;
+				cnt_ball <= 0;
+			else
+				if cnt_paddle < G_PADDLE_EVENT_INTERVAL - 1 then
+					cnt_paddle <= cnt_paddle + 1;
+					o_paddle_event <= '0';
+					else
+					o_paddle_event <= '1';
+					cnt_paddle <= 0;
+				end if;
+				if cnt_ball < G_BALL_EVENT_INTERVAL - 1 then
+					cnt_ball <= cnt_ball + 1;
+					o_ball_event <= '0';
+					else
+					o_ball_event <= '1';
+					cnt_ball <= 0;
+				end if;
+			end if;
+		end if;
+	end process;		
+
+
 
 
 

@@ -19,12 +19,13 @@ end random_number_generator;
 
 
 architecture rtl of random_number_generator is
-
+      signal seed : std_logic_vector(5 downto 0) := (others => '1');
 
 begin
-
-
-
-     
+      if rising_edge(clk) then
+            seed(5 downto 1)<= seed(4 downto 0);
+                seed(0) <= (seed(5) XOR seed(4));
+      end if;
+      o_random_number <= seed;
 end rtl;
 
