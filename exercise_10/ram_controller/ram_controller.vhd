@@ -36,6 +36,7 @@ entity ram_controller is
   generic (
     G_BURST_COUNT : integer := 16;
     G_DATA_WIDTH  : integer := 16);
+	
   port (clk   : in std_logic := '0';
         reset : in std_logic := '0';
 
@@ -69,10 +70,10 @@ architecture rtl of ram_controller is
   ------------------------------------------------------------------------------------------------------------
   -- signals
   ------------------------------------------------------------------------------------------------------------
-  type t_ram_ctrl_state is (IDLE, <insert config states>
+  type t_ram_ctrl_state is (IDLE, CONFIG_INIT, CONFIG_WAIT,
                             READ_INIT, READ_WAIT, READING,
                             WRITE_INIT, WRITING, WRITE_WAIT);
-  signal s_ram_ctrl_state : t_ram_ctrl_state                    := <first config state>;
+  signal s_ram_ctrl_state : t_ram_ctrl_state                    := CONFIG_INIT;
   signal s_ram_ctrl_cnt   : integer range 0 to G_BURST_COUNT+10 := 0;
 
   signal s_ram_dq_in  : std_logic_vector(15 downto 0) := (others => '0');
@@ -86,7 +87,8 @@ architecture rtl of ram_controller is
   
 
   constant C_INIT_WAIT : integer          := 3;
-
+  --Reserved & Reg_select & Reserved  & Op_mode & Ini_latency & Lat_Couter & Wait_polarity & Reserved  & WC & Reserved & Reserved & Drive_strength & BW & BL;
+  constant C_BCR: std_logic_vector := "000" & "10" & "00" & "0" & "1" & "011" & "1" & "0" & "0" & "0" & "0" & "01" & "1" & "111";
   -- it might be prudent to create some constants for the config parameters . . .
 
   
@@ -106,7 +108,7 @@ begin
   begin
     if rising_edge(clk) then
       if reset = '1' then
-        s_ram_ctrl_state <= <first config state>;
+        s_ram_ctrl_state <= CONFIG_INIT;
         o_ram_oe_neg     <= '1';
         o_ram_ce_neg     <= '1';
         o_ram_we_neg     <= '1';
@@ -126,9 +128,23 @@ begin
         o_write_done <= '0';
         s_ram_dq_out <= (others => 'Z');
         case s_ram_ctrl_state is
-          when <first config state> =>
-          when <last config state> =>
-            if <done> then
+          when CONFIG_INIT =>     
+            o_ram_address    <= C_BCR;
+            o_ram_cre        <= '1';  --The registers can be accessed when the control register enable (CRE) input is HIGH
+            o_ram_adv_neg    <= '0';  --rise edge: A accessible, so should be 0 in advance
+            o_ram_ce_neg     <= '0';  --chip enable
+            s_ram_ctrl_state <= CONFIG_WAIT;
+            s_ram_ctrl_cnt   <= 6;
+          when CONFIG_WAIT =>
+            o_ram_adv_neg    <= '1';   
+            o_ram_we_neg     <= '0'; --low: write A to config register enable
+            if s_ram_ctrl_cnt /= 0 then  --WE#: min 45/55 ns, max 4us, --> 6 clock(60ns) 
+              s_ram_ctrl_cnt <= s_ram_ctrl_cnt - 1;
+            else --ce, we, cre, adv recover
+              o_ram_adv_neg    <= '1';
+              o_ram_cre        <= '0';
+              o_ram_ce_neg     <= '1';
+              o_ram_we_neg     <= '1';
               s_ram_ctrl_state <= IDLE;
             end if;
           when IDLE =>
