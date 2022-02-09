@@ -35,7 +35,7 @@ signal cnt_ball: integer range 0 to G_BALL_EVENT_INTERVAL - 1;
 
 begin
 
-process (clk)
+process (clk, reset)
 
 	begin
 		if rising_edge(clk) then

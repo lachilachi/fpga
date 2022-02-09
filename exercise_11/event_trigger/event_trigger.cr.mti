@@ -1,0 +1,11 @@
+D:/FPGAtest/fpga/exercise_11/event_trigger/event_trigger_tb.vhd {2 {vcom -work work -2002 -explicit -vopt -stats=none D:/FPGAtest/fpga/exercise_11/event_trigger/event_trigger_tb.vhd
+Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity event_trigger_tb
+-- Compiling architecture beh of event_trigger_tb
+** Warning: D:/FPGAtest/fpga/exercise_11/event_trigger/event_trigger_tb.vhd(74): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}}
