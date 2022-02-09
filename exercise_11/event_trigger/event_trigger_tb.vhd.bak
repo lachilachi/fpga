@@ -19,8 +19,8 @@ architecture beh of event_trigger_tb is
          o_ball_event : out std_logic);
   end component;
 
-  constant G_PADDLE_EVENT_INTERVAL : integer := 10;
-  constant G_BALL_EVENT_INTERVAL : integer := 2;
+  constant G_PADDLE_EVENT_INTERVAL : integer := 5;
+  constant G_BALL_EVENT_INTERVAL : integer := 10;
   
   --Signals to connect the Unit Under Test (UUT)
   
