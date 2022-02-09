@@ -220,7 +220,7 @@ begin
 						else
 							o_reset_key <= '1';
 						end if;
-					when "11111100000" =>       -- find in .vec
+					when "11111100000" =>
 						key_release_flag <= '1';
 					when others =>
 						key_release_flag <= '0';
